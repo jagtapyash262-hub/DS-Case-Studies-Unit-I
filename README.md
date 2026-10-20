@@ -1,106 +1,83 @@
 
-# Case Study: E-commerce Product Sorting Using Divide and Conquer Strategy
+# E-commerce-Product-Sorting
 
-## 1. Introduction
+A Python case study demonstrating the Divide and Conquer algorithm design strategy using Merge Sort to sort e-commerce products by price.
 
-E-commerce websites contain a large number of products with different prices, ratings, and features. Customers often want to sort products according to price to find affordable products easily.
+# E-commerce Product Sorting Using Divide and Conquer
 
-This case study explains how the Divide and Conquer strategy can be used to sort e-commerce products using the Merge Sort algorithm.
+A Python case study demonstrating how the Divide and Conquer strategy can be used to arrange e-commerce products from lowest to highest price.
 
-## 2. Problem Statement
+## Features
 
-To arrange a list of e-commerce products in ascending order of price using the Divide and Conquer approach.
+- Sort products from lowest to highest price.
+- Display product names and prices before sorting.
+- Display the sorted product list after sorting.
+- Use Merge Sort to efficiently sort products.
+- Demonstrate the Divide and Conquer strategy.
 
-## 3. Objectives
+## Algorithm Used
 
-- To understand the Divide and Conquer strategy.
-- To implement the Merge Sort algorithm using Python.
-- To sort products according to their prices.
-- To analyze the time and space complexity of the algorithm.
+**Merge Sort (Divide and Conquer)**
 
-## 4. Strategy Used: Divide and Conquer
+- **Divide:** Split the product list into two halves.
+- **Conquer:** Recursively sort both halves.
+- **Combine:** Merge the sorted halves into one sorted list.
 
-Divide and Conquer is an algorithm design technique that divides a large problem into smaller subproblems, solves them, and combines their results.
+## Requirements
 
-It involves three steps:
+- Python 3.7 or newer
+- No external packages are required.
 
-1. **Divide:** Split the product list into two halves.
-2. **Conquer:** Sort each half recursively.
-3. **Combine:** Merge both sorted halves into one sorted list.
+## How to Run
 
-## 5. Algorithm Used: Merge Sort
+1. Clone or download this repository.
+2. Open a terminal in the project folder.
+3. Run:
 
-Merge Sort is a sorting algorithm based on the Divide and Conquer strategy.
+   ```bash
+   python ecommerce_sorting.py
+   ```
 
-In this case study, the products are divided into smaller lists, sorted by price, and merged to produce the final sorted list.
+## Sample Input
 
-## 6. Example
+```text
+Headphones: Rs. 1500
+Keyboard: Rs. 800
+Mouse: Rs. 400
+Monitor: Rs. 7000
+Webcam: Rs. 1200
+```
 
-### Input
+## Sample Output
 
-| Product | Price |
-|---|---:|
-| Headphones | Rs. 1500 |
-| Keyboard | Rs. 800 |
-| Mouse | Rs. 400 |
-| Monitor | Rs. 7000 |
-| Webcam | Rs. 1200 |
+```text
+Products After Sorting (Low to High):
+Mouse: Rs. 400
+Keyboard: Rs. 800
+Webcam: Rs. 1200
+Headphones: Rs. 1500
+Monitor: Rs. 7000
+```
 
-### Output
-
-| Product | Price |
-|---|---:|
-| Mouse | Rs. 400 |
-| Keyboard | Rs. 800 |
-| Webcam | Rs. 1200 |
-| Headphones | Rs. 1500 |
-| Monitor | Rs. 7000 |
-
-The products are arranged from lowest to highest price.
-
-## 7. Time Complexity
+## Time Complexity
 
 - Best Case: O(n log n)
 - Average Case: O(n log n)
 - Worst Case: O(n log n)
-- Auxiliary Space Complexity: O(n)
+- Auxiliary Space: O(n)
 
-Here, n represents the number of products.
+## Applications
 
-## 8. Advantages
+- Sorting products on e-commerce websites.
+- Arranging products by price or rating.
+- Organizing large product lists.
 
-- Efficient for sorting large product lists.
-- Provides predictable time complexity.
-- Can be adapted to sort products by different attributes.
-- Maintains the relative order of products having equal prices.
+## Conclusion
 
-## 9. Limitations
+This case study demonstrates how Merge Sort applies the Divide and Conquer strategy to sort e-commerce products efficiently. It helps illustrate the practical use of algorithm design techniques in real-world applications.
 
-- Requires additional memory during merging.
-- May have more overhead than simpler sorting algorithms for very small lists.
-- A real e-commerce system may need additional filtering and pagination features.
+## Files Included
 
-## 10. Applications
-
-- Sorting products by price on shopping websites.
-- Sorting products by ratings or popularity.
-- Organizing large product catalogues.
-- Arranging records in ascending or descending order.
-
-## 11. Conclusion
-
-This case study demonstrates how the Divide and Conquer strategy solves the product sorting problem using Merge Sort.
-
-The algorithm divides the product list into smaller parts, sorts them, and combines them into a final ordered list. It provides an efficient way to sort products and helps demonstrate an important concept in Data Structures and Algorithms.
-
-## 12. Technologies Used
-
-- Python
-- Merge Sort
-- Divide and Conquer Strategy
-
-## 13. Files Included
-
-- `ecommerce_sorting.py` – Python implementation of the algorithm.
-- `output.txt` – Sample output of the program.
+- `ecommerce_sorting.py` – Python source code.
+- `output.txt` – Program output.
 - `README.md` – Case study documentation.
