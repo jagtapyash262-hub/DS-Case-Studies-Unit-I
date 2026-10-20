@@ -1,0 +1,16 @@
+
+E-COMMERCE PRODUCT SORTING
+
+Products Before Sorting:
+Headphones: Rs. 1500
+Keyboard: Rs. 800
+Mouse: Rs. 400
+Monitor: Rs. 7000
+Webcam: Rs. 1200
+
+Products After Sorting (Low to High):
+Mouse: Rs. 400
+Keyboard: Rs. 800
+Webcam: Rs. 1200
+Headphones: Rs. 1500
+Monitor: Rs. 7000
